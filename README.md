@@ -7,3 +7,5 @@ NFL Jupyter Notebooks Playground Repository
 ### 2022 Rushing vs Passing
 
 ![Rushing Vs Passing Yards Stats](RushingvsPassingYards.png)
+
+![Fumbles vs Interceptionss](FumblesInt.png)
