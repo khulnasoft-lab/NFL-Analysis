@@ -1,3 +1,5 @@
+
+   
 name: Create Report
 on:
   push:
@@ -21,7 +23,7 @@ jobs:
         pip install -r requirements.txt 
     - name: Run Notebooks
       env:
-        GH_TOKEN:  ${{ secrets.GH_TOKEN }}
+        GH_TOKEN:  ${{ secrets.ORG_REPO_TOKEN }}
       run: |
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute fumblevsint.ipynb
          jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --inplace --execute RunVPass.ipynb
